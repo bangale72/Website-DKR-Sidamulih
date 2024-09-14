@@ -1,0 +1,212 @@
+body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar-logo a {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Atur gambar dalam carousel agar responsif */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;  /* Menjaga proporsi gambar agar tetap rapi */
+    max-height: 89vh;  /* Maksimal tinggi gambar untuk tampilan desktop */
+}
+
+/* Atur ukuran gambar untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 300px;  /* Sesuaikan tinggi gambar untuk tablet dan ponsel */
+    }
+}
+
+/* Tambahan styling untuk membuat caption terlihat lebih baik */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);  /* Transparansi hitam untuk teks di atas gambar */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Atur ukuran teks pada carousel-caption */
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+/* Menambah margin untuk bagian bawah carousel */
+.carousel {
+    margin-bottom: 50px;
+}
+
+.container-flex {
+    flex: 1; /* Isi ruang yang tersisa di antara header dan footer */
+}
+
+.img {
+    width: 100%;
+    flex: 1;
+}
+
+/* Tombol Live Chat Mengambang */
+.chat-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/* Tombol Live Chat Mengambang */
+.chat-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.chat-button {
+    background-color: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-button i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.chat-button:hover {
+    background-color: #128C7E;
+}
+
+/* Pop-up Chat Box */
+.chat-popup {
+    display: none; /* Mulai dalam keadaan tersembunyi */
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.chat-header {
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chat-body {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.chat-footer {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 0 0 10px 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+}
+
+.send-button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.send-button:hover {
+    background-color: #128C7E;
+}
+
+/* Animasi mengetik */
+.typing {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+
+    animation: blink 0.7s infinite step-start;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+#typingAnimation {
+    margin-top: 10px;
+}
+
+
+
+
+/* Styling untuk footer */
+footer {
+    text-align: center; /* Posisi teks di tengah */
+    padding: 15px 0; /* Jarak dari tepi footer */
+    position: relative; /* Posisi footer relatif */
+    bottom: 0; /* Menempel di bawah halaman */
+    width: 100%; /* Lebar penuh */
+}

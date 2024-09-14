@@ -1,0 +1,111 @@
+/* Style untuk halaman login */
+body {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-label {
+    margin: 10px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    box-sizing: border-box; /* Pastikan padding dan border tidak melebihi lebar input */
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+@media (max-width: 576px) {
+    .login-container {
+        padding: 30px;
+        width: 90%;
+    }
+}
+
+/* Style untuk halaman register */
+.register-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2px;
+    color: #333;
+}
+
+.text-center a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
